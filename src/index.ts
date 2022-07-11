@@ -1,9 +1,11 @@
 import Phaser from 'phaser';
 import config from './config';
+import TitleScene from './scenes/Title';
 import GameScene from './scenes/Game';
+
 
 new Phaser.Game(
   Object.assign(config, {
-    scene: [GameScene]
+    scene: [TitleScene, GameScene]
   })
 );
